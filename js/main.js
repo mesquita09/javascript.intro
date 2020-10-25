@@ -63,13 +63,13 @@ console.log(d.getFullYear());
 console.log(d.getMonth() + 1);
 */
 // Funcoes
-
+/*
 function soma(n1, n2) {
   return n1 + n2;
 }
 console.log(soma(5, 10));
 
-/*
+
 function validaIdade(idade) {
   if (idade >= 18) {
     return true;
@@ -80,3 +80,25 @@ function validaIdade(idade) {
 var idade = prompt("Qual a idade?");
 console.log(validaIdade(idade));
 */
+
+function botao() {
+  //console.log("click ok");
+  document.getElementById("click").innerHTML = "Clique Aqui";
+}
+function redirect() {
+  window.open("https://google.com");
+}
+function troca(elemento) {
+  //document.getElementById("troca").innerHTML = "Trocou";
+  elemento.innerHTML = "Trocou";
+}
+function volta(elemento) {
+  //document.getElementById("troca").innerHTML = "Click Aqui";
+  elemento.innerHTML = "Passe o Mouse";
+}
+function load() {
+  console.log("Pagina Carregada!");
+}
+function funcaoChange(elemento) {
+  console.log(elemento.value);
+}

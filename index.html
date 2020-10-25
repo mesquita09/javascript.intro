@@ -3,11 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Javascript Intro</title>
+    <link rel="stylesheet" href="style.css" />
     <script type="text/javascript" src="./js/main.js"></script>
+    <title>Javascript Intro</title>
   </head>
-  <body>
-    <h1>pagina</h1>
-    <button type="button">Clique no Botão</button>
+  <body onload="load()">
+    <div class="wrapper">
+      <h1>Javascript Intro</h1>
+      <button class="botao" type="button" onclick="botao()">
+        Clique no Botão
+      </button>
+      <p id="click" onclick="redirect()"></p>
+      <p id="troca" onmouseover="troca(this)" onmouseout="volta(this)">
+        Passe o Mouse
+      </p>
+      <p id="troca" onmouseover="troca(this)" onmouseout="volta(this)">
+        Passe o Mouse
+      </p>
+      <select class="opcao" onchange="funcaoChange(this)">
+        <option value="1">Opção 1</option>
+        <option value="2">Opção 2</option>
+        <option value="3">Opção 3</option>
+      </select>
+    </div>
   </body>
 </html>
